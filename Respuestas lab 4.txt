@@ -1,0 +1,51 @@
+Respuestas al laboratorio
+
+Pregunta 6:
+
+A) web. xml define las asignaciones entre las rutas de URL y los servlets que 
+manejan las solicitudes con esas rutas. El servidor web usa esta configuración
+para identificar el servlet que maneja una solicitud determinada y llamar al 
+método de clase que corresponde al método de la solicitud.
+
+B) Estan diseñados para escuchar los diferentes eventos que se producen en 
+el ciclo de vida de la aplicacion web.
+
+C) Un servlet es una clase en el lenguaje de programación Java, utilizada para 
+ampliar las capacidades de un servidor.
+
+etiquetas:
+
+servlet-name: Declara un nombre para ese servlet particular instaciado
+
+servlet-class: Es un tipo de clase que declara todo los métodos que los servlets irán
+a utillizar 
+
+D) Es la "raíz" del application context configuration. Es opcional, configura aquellos non-
+web beans.
+
+E) Es el llamado Spring Web Application Context Configuration. Configura mis beans de 
+Spring en mi aplicación web. Sí usa root-context.xml, lo mejor sería poner tu non web beans
+in root-context.xml, y los web beans en el servlet-context.xml.
+
+En contexto del servlet-context:
+1. Significa que puedes definir beans de Spring sin tener que agregar o especificar un mon-
+ton de elementos en XML o implementando interfaces or creando una herencia con una
+clase base.
+
+2. InternalResourceViewResolver es usada para resolver los URI provistos.
+
+3. Con este tag, le digo a Spring que escanee mis archivos buscandolos en base a mi
+annotation.
+
+H. Clase: HomeController.java
+1. Para determinar que es un servlet
+2. Para hacer la injección de dependencias de objetos
+3. Me permite trabajar con peticiones HTTP.
+
+
+
+ 
+
+
+
+
